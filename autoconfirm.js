@@ -170,8 +170,8 @@ function tryClickVideoPlayer() {
   if (
     document
       .querySelector(videoPlayerElement)
-      .classList.contains('paused-mode') &&
-    !videoActed
+      .classList.contains('paused-mode')
+     // && !videoActed
   ) {
     debug('Detected video paused!');
     if (!hasHappenedAfterTimeThreshold()) {
